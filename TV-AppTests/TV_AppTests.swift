@@ -41,7 +41,21 @@ class TV_AppTests: XCTestCase {
                 XCTAssertTrue(data.isEmpty == false, "expected data got \(data)")
             }
         }
-        
+    }
+    func testGetShowsNotEmpty() {
+        let url = "http://api.tvmaze.com/search/shows?q=girls"
+        let shows = [TVShows]()
+        TVShows.getShows(from: url) {(result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .failure(let error):
+                    print(error)
+                case .success(let showsFromURL):
+                    shows = showsFromURL
+                }
+            }
+        }
+        XCTAssertTrue(shows.count > 0, "expected shows got \(shows)")
     }
 
 }
