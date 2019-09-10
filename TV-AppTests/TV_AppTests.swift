@@ -44,7 +44,7 @@ class TV_AppTests: XCTestCase {
     }
     func testGetShowsNotEmpty() {
         let url = "http://api.tvmaze.com/search/shows?q=girls"
-        let shows = [TVShows]()
+        var shows = [TVShows]()
         TVShows.getShows(from: url) {(result) in
             DispatchQueue.main.async {
                 switch result {
@@ -52,10 +52,12 @@ class TV_AppTests: XCTestCase {
                     print(error)
                 case .success(let showsFromURL):
                     shows = showsFromURL
+                    print(shows.count)
+                    XCTAssertTrue(shows.count > 0, "expected shows got \(shows.count)")
                 }
             }
         }
-        XCTAssertTrue(shows.count > 0, "expected shows got \(shows)")
+        
     }
 
 }
