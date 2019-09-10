@@ -15,6 +15,8 @@
 		4DAFFB042328220A00CC3714 /* TV_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB032328220A00CC3714 /* TV_AppTests.swift */; };
 		4DAFFB122328272400CC3714 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB112328272400CC3714 /* NetworkManager.swift */; };
 		4DAFFB142328277C00CC3714 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB132328277C00CC3714 /* AppError.swift */; };
+		4DAFFB15232829C000CC3714 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB112328272400CC3714 /* NetworkManager.swift */; };
+		4DAFFB16232829C300CC3714 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB132328277C00CC3714 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,7 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DAFFB15232829C000CC3714 /* NetworkManager.swift in Sources */,
 				4DAFFB042328220A00CC3714 /* TV_AppTests.swift in Sources */,
+				4DAFFB16232829C300CC3714 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

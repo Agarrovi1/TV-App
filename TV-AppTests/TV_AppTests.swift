@@ -31,9 +31,17 @@ class TV_AppTests: XCTestCase {
         }
     }
     func testGetData() {
-        let url = ""
-        NetworkManager.shared.getData(urlString: url)
-        XCTAssertTrue(data.isEmpty == false, "expected data got \(data)")
+        let url = "http://api.tvmaze.com/search/shows?q=girls"
+        NetworkManager.shared.getData(urlString: url) { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+                XCTAssert(false)
+            case .success(let data):
+                XCTAssertTrue(data.isEmpty == false, "expected data got \(data)")
+            }
+        }
+        
     }
 
 }
