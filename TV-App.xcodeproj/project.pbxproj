@@ -77,11 +77,11 @@
 		4DAFFAED2328220900CC3714 /* TV-App */ = {
 			isa = PBXGroup;
 			children = (
-				4DAFFAEE2328220900CC3714 /* AppDelegate.swift */,
-				4DAFFAF02328220900CC3714 /* ViewController.swift */,
+				4DAFFB0E232826A400CC3714 /* Supporting Files */,
+				4DAFFB0F232826B100CC3714 /* View Controllers */,
+				4DAFFB10232826CF00CC3714 /* Models */,
 				4DAFFAF22328220900CC3714 /* Main.storyboard */,
 				4DAFFAF52328220A00CC3714 /* Assets.xcassets */,
-				4DAFFAF72328220A00CC3714 /* LaunchScreen.storyboard */,
 				4DAFFAFA2328220A00CC3714 /* Info.plist */,
 			);
 			path = "TV-App";
@@ -94,6 +94,30 @@
 				4DAFFB052328220A00CC3714 /* Info.plist */,
 			);
 			path = "TV-AppTests";
+			sourceTree = "<group>";
+		};
+		4DAFFB0E232826A400CC3714 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DAFFAEE2328220900CC3714 /* AppDelegate.swift */,
+				4DAFFAF72328220A00CC3714 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DAFFB0F232826B100CC3714 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DAFFAF02328220900CC3714 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4DAFFB10232826CF00CC3714 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
