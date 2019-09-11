@@ -11,6 +11,7 @@ struct Episode: Codable {
     let name: String
     let season: Int
     let number: Int
+    let summary: String?
     let image: ImageInfo?
     
     static func getEpisodes(url: String,completionHandler: @escaping (Result<[Episode],AppError>) -> ()) {

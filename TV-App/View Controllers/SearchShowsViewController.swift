@@ -80,6 +80,8 @@ extension SearchShowsViewController: UITableViewDataSource {
                     }
                 }
             }
+        } else {
+            cell.showImageView.image = UIImage(named: "noImage")
         }
         return cell
     }

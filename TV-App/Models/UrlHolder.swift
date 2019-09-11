@@ -15,6 +15,7 @@ class UrlHolder {
     func episode(by id: Int) -> String {
         return "http://api.tvmaze.com/shows/\(id)/episodes"
     }
+    
 }
 
 

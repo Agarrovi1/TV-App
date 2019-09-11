@@ -64,27 +64,22 @@ class EpisodesTableViewController: UITableViewController {
                     }
                 }
             }
+        } else {
+            cell.episodeImageView.image = UIImage(named: "noImage")
         }
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 172
     }
-
     
-
     
-
-    
-
-    
-
-    /*
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
+        guard let destination = segue.destination as? EpDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {return}
+        destination.episode = episodes[indexPath.row]
     }
-    */
+    
 
 }

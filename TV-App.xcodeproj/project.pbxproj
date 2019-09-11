@@ -24,6 +24,7 @@
 		4DAFFB24232958FB00CC3714 /* EpisodesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB23232958FB00CC3714 /* EpisodesTableViewController.swift */; };
 		4DAFFB26232959F800CC3714 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB25232959F800CC3714 /* Episode.swift */; };
 		4DAFFB2823295E6200CC3714 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB2723295E6200CC3714 /* EpisodeTableViewCell.swift */; };
+		4DAFFB2C232990FC00CC3714 /* EpDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB2B232990FC00CC3714 /* EpDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4DAFFB23232958FB00CC3714 /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesTableViewController.swift; sourceTree = "<group>"; };
 		4DAFFB25232959F800CC3714 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		4DAFFB2723295E6200CC3714 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		4DAFFB2B232990FC00CC3714 /* EpDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				4DAFFAF02328220900CC3714 /* SearchShowsViewController.swift */,
 				4DAFFB23232958FB00CC3714 /* EpisodesTableViewController.swift */,
+				4DAFFB2B232990FC00CC3714 /* EpDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				4DAFFB1823282D0200CC3714 /* Shows.swift in Sources */,
 				4DAFFB142328277C00CC3714 /* AppError.swift in Sources */,
+				4DAFFB2C232990FC00CC3714 /* EpDetailViewController.swift in Sources */,
 				4DAFFB122328272400CC3714 /* NetworkManager.swift in Sources */,
 				4DAFFB26232959F800CC3714 /* Episode.swift in Sources */,
 				4DAFFAF12328220900CC3714 /* SearchShowsViewController.swift in Sources */,
