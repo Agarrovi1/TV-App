@@ -9,7 +9,10 @@
 import UIKit
 
 class SearchShowTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var showRatingLabel: UILabel!
+    @IBOutlet weak var showNameLabel: UILabel!
+    @IBOutlet weak var showImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

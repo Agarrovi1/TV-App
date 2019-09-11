@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 class ImageHelper {
+    static let shared = ImageHelper()
     func getImage(urlString: String,completionHandler: @escaping (Result<UIImage,AppError>) -> ()) {
         NetworkManager.shared.getData(urlString: urlString) { (result) in
             switch result {

@@ -42,6 +42,6 @@ class NetworkManager {
             default:
                 completionHandler(.failure(.other(rawError: "Wrong Status Code")))
             }
-        }
+        }.resume()
     }
 }

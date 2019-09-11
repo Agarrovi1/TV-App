@@ -73,6 +73,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="IEX-ur-qXX" secondAttribute="trailing" constant="20" id="xDs-Uh-kVX"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="showImageView" destination="lJy-jt-jKR" id="iKH-2H-99a"/>
+                                            <outlet property="showNameLabel" destination="IEX-ur-qXX" id="vPe-RN-ttK"/>
+                                            <outlet property="showRatingLabel" destination="yqt-OB-x4w" id="bhu-nS-OmG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

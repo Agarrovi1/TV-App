@@ -42,22 +42,40 @@ class TV_AppTests: XCTestCase {
             }
         }
     }
-    func testGetShowsNotEmpty() {
-        let url = "http://api.tvmaze.com/search/shows?q=girls"
-        var shows = [TVShows]()
-        TVShows.getShows(from: url) {(result) in
-            DispatchQueue.main.async {
-                switch result {
-                case .failure(let error):
-                    print(error)
-                case .success(let showsFromURL):
-                    shows = showsFromURL
-                    print(shows.count)
-                    XCTAssertTrue(shows.count > 0, "expected shows got \(shows.count)")
-                }
-            }
-        }
-        
-    }
+//    func testGetShowsNotEmpty() {
+//        let url = "http://api.tvmaze.com/search/shows?q=girls"
+//        var shows = [TVShows]()
+//        TVShows.getShows(from: url) {(result) in
+//            DispatchQueue.main.async {
+//                switch result {
+//                case .failure(let error):
+//                    print(error)
+//                case .success(let showsFromURL):
+//                    shows = showsFromURL
+//                    print(shows.count)
+//                    XCTAssertTrue(shows.count > 0, "expected shows got \(shows.count)")
+//                }
+//            }
+//        }
+//    }
+//    func testShowName() {
+//        let url = "http://api.tvmaze.com/search/shows?q=girls"
+//        var shows = [Show]() {
+//            didSet {
+//                XCTAssertTrue(shows[0].showInfo.name.isEmpty, "expected \(shows[0].showInfo.name)")
+//            }
+//        }
+//        DispatchQueue.main.async {
+//            TVShows.getShows(from: url) {(result) in
+//                switch result {
+//                case .failure(let error):
+//                    print(error)
+//                case .success(let showsFromURL):
+//                    shows = showsFromURL
+//                    print(shows.count)
+//                }
+//            }
+//        }
+//    }
 
 }

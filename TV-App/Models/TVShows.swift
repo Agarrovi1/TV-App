@@ -7,17 +7,25 @@
 //
 
 import Foundation
-struct TVShows: Codable {
-    let shows: ShowInfo
+struct Shows: Codable {
+    let show: Show
+}
+struct Show: Codable {
     
-    static func getShows(from urlString:String, completionHandler: @escaping (Result<[TVShows],AppError>) -> ()) {
+    let id: Int
+    let name: String
+    let rating: Rating
+    let image: ImageInfo?
+    
+    static func getShows(urlString: String, completionHandler: @escaping (Result<[Shows],AppError>) -> ()){
+        
         NetworkManager.shared.getData(urlString: urlString) { (result) in
             switch result {
             case .failure(let error):
                 completionHandler(.failure(error))
             case .success(let data):
                 do {
-                let shows = try JSONDecoder().decode([TVShows].self, from: data)
+                    let shows = try JSONDecoder().decode([Shows].self, from: data)
                     completionHandler(.success(shows))
                 } catch {
                     completionHandler(.failure(.badJSONError))
@@ -27,15 +35,8 @@ struct TVShows: Codable {
     }
 }
 
-struct ShowInfo: Codable {
-    let id: Int
-    let name: String
-    let rating: Rating
-    let image: ImageInfo
-}
-
 struct Rating: Codable {
-    let average: Double
+    let average: Double?
 }
 
 struct ImageInfo: Codable {

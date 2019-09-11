@@ -20,6 +20,7 @@
 		4DAFFB1823282D0200CC3714 /* TVShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB1723282D0200CC3714 /* TVShows.swift */; };
 		4DAFFB1A232836A900CC3714 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB19232836A900CC3714 /* ImageHelper.swift */; };
 		4DAFFB1D2328382E00CC3714 /* SearchShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB1C2328382E00CC3714 /* SearchShowTableViewCell.swift */; };
+		4DAFFB1F23283F8600CC3714 /* UrlHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFB1E23283F8600CC3714 /* UrlHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		4DAFFB1723282D0200CC3714 /* TVShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShows.swift; sourceTree = "<group>"; };
 		4DAFFB19232836A900CC3714 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		4DAFFB1C2328382E00CC3714 /* SearchShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowTableViewCell.swift; sourceTree = "<group>"; };
+		4DAFFB1E23283F8600CC3714 /* UrlHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				4DAFFB19232836A900CC3714 /* ImageHelper.swift */,
 				4DAFFB132328277C00CC3714 /* AppError.swift */,
 				4DAFFB1723282D0200CC3714 /* TVShows.swift */,
+				4DAFFB1E23283F8600CC3714 /* UrlHolder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				4DAFFB122328272400CC3714 /* NetworkManager.swift in Sources */,
 				4DAFFAF12328220900CC3714 /* SearchShowsViewController.swift in Sources */,
 				4DAFFB1D2328382E00CC3714 /* SearchShowTableViewCell.swift in Sources */,
+				4DAFFB1F23283F8600CC3714 /* UrlHolder.swift in Sources */,
 				4DAFFAEF2328220900CC3714 /* AppDelegate.swift in Sources */,
 				4DAFFB1A232836A900CC3714 /* ImageHelper.swift in Sources */,
 			);
