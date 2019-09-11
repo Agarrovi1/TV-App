@@ -36,7 +36,7 @@ class SearchShowsViewController: UIViewController {
                     print(error)
                 case .success(let showsFromSearch):
                     self.tvShows = showsFromSearch
-                    dump(self.tvShows)
+                    //dump(self.tvShows)
                 }
             }
         }
@@ -46,6 +46,11 @@ class SearchShowsViewController: UIViewController {
         tvShowTableView.dataSource = self
         tvShowTableView.delegate = self
         tvShowSearchBar.delegate = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? EpisodesTableViewController, let indexPath = tvShowTableView.indexPathForSelectedRow else {return}
+        destination.show = tvShows[indexPath.row]
     }
 }
 
@@ -78,8 +83,6 @@ extension SearchShowsViewController: UITableViewDataSource {
         }
         return cell
     }
-    
-    
 }
 
 extension SearchShowsViewController: UITableViewDelegate {

@@ -12,6 +12,9 @@ class UrlHolder {
     func searchShowsQuery(string: String) -> String {
         return "http://api.tvmaze.com/search/shows?q=\(string.lowercased())"
     }
+    func episode(by id: Int) -> String {
+        return "http://api.tvmaze.com/shows/\(id)/episodes"
+    }
 }
 
 
